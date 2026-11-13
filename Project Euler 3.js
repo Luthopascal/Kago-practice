@@ -5,7 +5,7 @@
 // make sure that we find all the factors until 600851475143 done
 // find the factors of number (600851475143) on separate function
 //check if the factors are prime numbers (separate function)
-// if it is a prime number add the result to a variable called LargestPrimeFactors
+// if it is a prime number assign the result to a variable called LargestPrimeFactors
 
 
 
@@ -16,18 +16,31 @@ let PrimeFactor = 0 // if the Factor is prime we keep them in here. This variabl
 function Checkfactors (){   //check if the number is a factor
   for (;FactorNoPrime < number; FactorNoPrime++){
     if (number % FactorNoPrime === 0) {
-      let Truefactor = factornoprime // assign the factor to a varaiable to show it is a factor
-      
-      Isprime(Truefactor) //checking if its a prime // we called the Isprime inside checkfactor
+      let Truefactor = FactorNoPrime // assign the factor to a varaiable to show it is a factor
+    
       // we're not storing we're using Isprime to find 
       //x=y
-      let TruePrime = Isprime(Truefactor) // assign the answer of the isprime to the variable inside the existing checkfactors function
+      let IsItAPrime = Isprime(Truefactor) //calling the function (true or false) assign the answer of the isprime to the variable inside the existing checkfactors function. Stores the True or False answer
       
-      let PrimeFactor = Truefactor
-      if 
+            if (IsItAPrime )   {              //already true or false
+            let LargestPrimeFactors = Truefactor 
+              } 
         
     }
-  } return (FactorNoPrime)
+  } 
 }
 
-function Isprime 
+function Isprime () { //Core Rules & Characteristics
+     if (FactorNoPrime > 1) {
+       if (FactorNoPrime % 2 ===0 ){
+         if (FactorNoPrime < Math.sqrt(number)) 
+       }
+     } return true
+
+  
+}
+
+
+
+
+
