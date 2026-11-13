@@ -16,7 +16,7 @@ function Findmultiplesof (){
     for (;numofmultiple < 1000; numofmultiple++){
         
         if (numofmultiple % 3 == 0 || numofmultiple % 5==0) {
-            mutliples = mutliples + numofmultiple
+            mutliples = mutliples + numofmultiple  // multiples += numofmultiples
         }
 
     }
